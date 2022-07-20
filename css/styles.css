@@ -1,0 +1,243 @@
+/* Reset */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* ----- */
+
+/* Body */
+body{
+    background-color:rgb(135, 0, 0);
+    overflow:scroll;
+    overflow-x: hidden;
+}
+/* ----- */
+
+/* Portada */
+.portada{
+    background-image: linear-gradient(black, rgb(135, 0, 0));
+    text-align:center;
+    padding: 0px;
+    margin: 0px;
+}
+/* ----- */
+
+/* Menú */
+.menu{
+    background-color: transparent;
+    text-align: center;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+}
+.textoMenu{
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 125%;
+    text-shadow: 2px 2px black;
+}
+header>h1>a:hover{
+    font-size: 120%;
+}
+/* ----- */
+
+/* Tarjetas */
+.tarjeta{
+    background-color: transparent;
+    text-align:left;
+    padding:0px;
+    margin: 0px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+.tarjeta a{
+    text-decoration: none;
+    padding-left: 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 160%;
+}
+.tarjeta>ul>li>a:hover{
+    font-size: x-large;
+}
+/* ----- */
+
+/* Main */
+main{
+    text-align: center;
+}
+.AatroxGrande:hover{
+    transform: scale(1.2);
+}
+.imagen1:hover{
+    transform: scale(1.2);
+}
+.imagen2:hover{
+    transform: scale(1.2);
+}
+.imagen3:hover{
+    transform: scale(1.2);
+}
+.imagen4:hover{
+    transform: scale(1.2);
+}
+.imagen5:hover{
+    transform: scale(1.2);
+}
+.imagen6:hover{
+    transform: scale(1.2);
+}
+/* ----- */
+
+/* Contact */
+.formulario{
+    margin-bottom: 25px;
+}
+
+.datos{
+    margin-bottom: 25px;
+}
+/* ----- */
+
+/* News */
+.noticias{
+    margin-bottom: 15px;
+}
+
+.noticiasRecientes{
+    margin-bottom: 15px;
+}
+
+.noticiasMasLeidas{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* ----- */
+
+/* Index */
+.muestragrande{
+    text-align: center;
+}
+
+.pequeñasmuestras{
+    text-align:center;
+}
+
+.sectionAatrox{
+    grid-area: sectionAatrox;
+}
+
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.imagen3{
+    grid-area: imagen3;
+}
+.imagen4{
+    grid-area: imagen4;
+}
+.imagen5{
+    grid-area: imagen5;
+}
+.imagen6{
+    grid-area: imagen6;
+}
+/* ----- */
+
+/* Footer */
+footer p{
+    background-color: grey;
+    text-align: left;
+}
+/* ----- */
+
+/* Grid */
+.mainIndex{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 0fr 0fr;
+    grid-template-areas:"sectionAatrox sectionAatrox sectionAatrox sectionAatrox sectionAatrox sectionAatrox"
+                        "imagen1 imagen2 imagen3 imagen4 imagen5 imagen6";
+    justify-content: center;
+    align-items: center;    
+}
+/* ----- */
+
+/* Media Queries */
+
+@media screen and (min-width:320px) and (max-width:480px){
+    header>h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    header>nav{
+        display: flex;
+        justify-content: left;
+    }
+    .mainIndex{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-areas:"sectionAatrox sectionAatrox"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "imagen5 imagen6";
+        justify-content: center;
+        align-items: center;    
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:991px){
+    header>h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    header>nav{
+        display: flex;
+        justify-content: left;
+    }
+    .mainIndex{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-areas:"sectionAatrox sectionAatrox"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "imagen5 imagen6";
+        justify-content: center;
+        align-items: center;    
+    }
+}
+
+@media screen and (min-width:1024px){
+    header>h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    header>nav{
+        display: flex;
+        justify-content: left;
+    }
+    .mainIndex{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: 0fr 0fr;
+        grid-template-areas:"sectionAatrox sectionAatrox sectionAatrox sectionAatrox sectionAatrox sectionAatrox"
+                            "imagen1 imagen2 imagen3 imagen4 imagen5 imagen6";
+        justify-content: center;
+        align-items: center;    
+    }
+}
+
+/* ----- */
